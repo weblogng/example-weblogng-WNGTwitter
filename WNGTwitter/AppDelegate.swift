@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WNGTwitter
 //
-//  Created by Apol on 10/11/14.
+//  Created by tstechly on 10/11/14.
 //  Copyright (c) 2014 WeblogNG. All rights reserved.
 //
 
