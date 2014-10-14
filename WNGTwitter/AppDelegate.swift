@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let  apiKey = "93c5a127-e2a4-42cc-9cc6-cf17fdac8a7f";
+        WNGLogger.initSharedLogger(apiKey)
+        NSURLConnection.wng_setLogging(true)
+        
+
         return true
     }
 

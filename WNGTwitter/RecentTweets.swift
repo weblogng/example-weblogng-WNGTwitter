@@ -1,7 +1,6 @@
 //
 //  Based on SwifterDemoiOS
 //
-//  Copyright (c) 2014 Matt Donnelly.
 //
 import UIKit
 import SwifteriOS
