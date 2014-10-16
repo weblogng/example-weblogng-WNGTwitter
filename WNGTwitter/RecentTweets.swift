@@ -31,7 +31,6 @@ class RecentTweets: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return tweets.count
     }
     
@@ -39,6 +38,21 @@ class RecentTweets: UITableViewController {
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: nil)
         
         cell.textLabel!.text = tweets[indexPath.row]["text"].string
+        
+        let media:JSONValue = tweets[indexPath.row]["entities"]["media"]
+       
+        if media.array != nil {
+            
+            if(media[0]["type"]=="photo") {
+                var url = media[0]["media_url"].string
+                let baseURL = NSURL(string: url!)
+                let forecastURL: NSURL? = NSURL(string: "", relativeToURL: baseURL)
+                let weatherData = NSData(contentsOfURL: forecastURL!)
+                
+                var bgImage:UIImage = UIImage(data:weatherData)
+                cell.imageView?.image = bgImage
+            }
+        }
         
         return cell
     }
