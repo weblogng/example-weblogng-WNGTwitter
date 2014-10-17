@@ -17,6 +17,7 @@
 		5CAC40E719E9C0D000DE304D /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C422CBB19E9926A008D4DB0 /* SwifteriOS.framework */; };
 		5CAC40E819E9C0D000DE304D /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C422CBB19E9926A008D4DB0 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CAC40ED19E9C4A700DE304D /* RecentTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC40EC19E9C4A700DE304D /* RecentTweets.swift */; };
+		5CCB208919F193CF007DB1C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB208819F193CF007DB1C0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		5C422C3419E98EBE008D4DB0 /* WNGTwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNGTwitterTests.swift; sourceTree = "<group>"; };
 		5C422CB019E9926A008D4DB0 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		5CAC40EC19E9C4A700DE304D /* RecentTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTweets.swift; sourceTree = "<group>"; };
+		5CCB208819F193CF007DB1C0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7F0A0780B39D907B1A09F5C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0DC1018D2F04AFB53FA81CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 				5C422C2719E98EBE008D4DB0 /* LaunchScreen.xib */,
 				5C422C1C19E98EBE008D4DB0 /* Supporting Files */,
 				5CAC40EC19E9C4A700DE304D /* RecentTweets.swift */,
+				5CCB208819F193CF007DB1C0 /* main.swift */,
 			);
 			path = WNGTwitter;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			files = (
 				5C422C2119E98EBE008D4DB0 /* AuthView.swift in Sources */,
 				5CAC40ED19E9C4A700DE304D /* RecentTweets.swift in Sources */,
+				5CCB208919F193CF007DB1C0 /* main.swift in Sources */,
 				5C422C1F19E98EBE008D4DB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

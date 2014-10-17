@@ -8,19 +8,20 @@
 
 import UIKit
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
         
-        let  apiKey = "93c5a127-e2a4-42cc-9cc6-cf17fdac8a7f";
-        WNGLogger.initSharedLogger(apiKey)
-        NSURLConnection.wng_setLogging(true)
-        
+        /** NEED THIS DATA BEFORE I SHOW UI TO USER **/
+        self.timeConsumingOperation()
+
+        WNGLogger.sharedLogger().recordFinishAndSendMetric("application-launch")
+
+        NSLog("AppDelegate:application:didFinishLaunchingWithOptions")
 
         return true
     }
@@ -45,6 +46,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+
+    /*
+    DEMO METHODS
+
+    */
+    func timeConsumingOperation() {
+            
+         let baseURL = NSURL(string: "https://www.seoclerk.com/pics/219594-1lPi4C1400002116.png")
+         let data = NSData(contentsOfURL: baseURL)
+         var bgImage:UIImage = UIImage(data:data)
+
     }
 
 
