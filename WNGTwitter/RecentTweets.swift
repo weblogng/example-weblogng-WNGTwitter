@@ -25,14 +25,18 @@ class RecentTweets: UITableViewController {
         self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.topLayoutGuide.length, 0, 0, 0)
     }
     
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweets.count
     }
+    
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: nil)
@@ -46,11 +50,10 @@ class RecentTweets: UITableViewController {
             if(media[0]["type"]=="photo") {
                 var url = media[0]["media_url"].string
                 let baseURL = NSURL(string: url!)
-                let forecastURL: NSURL? = NSURL(string: "", relativeToURL: baseURL)
-                let weatherData = NSData(contentsOfURL: forecastURL!)
+                let imageURL: NSURL? = NSURL(string: "", relativeToURL: baseURL)
+                let imageData = NSData(contentsOfURL: imageURL!)
                 
-                var bgImage:UIImage = UIImage(data:weatherData)
-                cell.imageView?.image = bgImage
+                cell.imageView?.image = UIImage(data:imageData)
             }
         }
         
