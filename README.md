@@ -1,7 +1,7 @@
 WNGTwitter Example App
 ======================
 
-WNGTwitter is a simple example application that shows how the [WeblogNG iOS Client library](https://github.com/weblogng/weblogng-client-iOS) can be integrated into a simple Twitter client built with Swift and provide:
+WNGTwitter is a simple Swift Twitter client that shows how the [WeblogNG iOS Client library](https://github.com/weblogng/weblogng-client-iOS) can be integrated easily and provide:
 
 * application launch time
 * automatic measurement of HTTP requests
