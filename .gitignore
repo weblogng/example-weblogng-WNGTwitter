@@ -1,0 +1,7 @@
+# lifted some of this from https://github.com/CocoaPods/CocoaPods/blob/master/.gitignore
+Pods
+xcuserdata
+*.xcworkspace
+*.xccheckout
+compile_commands.json
+
