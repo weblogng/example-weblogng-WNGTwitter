@@ -14,7 +14,7 @@ NSLog("starting WNGTwitter")
 let  apiKey = "93c5a127-e2a4-42cc-9cc6-cf17fdac8a7f";
 WNGLogger.initSharedLogger(apiKey)
 WNGLogger.sharedLogger().recordStart("application-launch")
-NSURLConnection.wng_setLogging(true)
+NSURLConnection.wng_enableLogging()
 
 UIApplicationMain(C_ARGC, C_ARGV, NSStringFromClass(UIApplication), NSStringFromClass(AppDelegate))
 
